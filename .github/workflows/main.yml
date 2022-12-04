@@ -14,90 +14,130 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3.1.0
 
-    - name: Day 1 puzzel 1
+    - name: Day 1 setup
       run: |
         cd Day1
         echo "Building puzzel 1"
         g++ Puzzel1.cpp -o Puzzel1.exe
-        ./Puzzel1.exe
-        echo "time c++ puzzel"
-        time ./Puzzel1.exe
-        echo "time python puzzel"
-        time python3 Puzzel1.py
-
-    - name: Day 1 puzzel 2
-      run: |
-        cd Day1
         echo "Building puzzel 2"
         g++ Puzzel2.cpp -o Puzzel2.exe
-        ./Puzzel2.exe
+        
+    - name: Day 1 puzzel 1 c++
+      run: |
+        cd Day1
         echo "time c++ puzzel"
-        time ./Puzzel2.exe
+        time ./Puzzel1.exe
+
+    - name: Day 1 puzzel 1 python
+      run: |
+        cd Day1
         echo "time python puzzel"
-        time python3 Puzzel2.py
+        time python3 Puzzel1.py
       
-    - name: Day 2 Puzzel 1
+    - name: Day 1 puzzel 2 c++
+      run: |
+        cd Day1
+        echo "time c++ puzzel"
+        time ./Puzzel2.exe
+
+    - name: Day 1 puzzel 2 python
+      run: |
+        cd Day1
+        echo "time python puzzel"
+        time python3 Puzzel2.py
+
+    - name: Day 2 setup
       run: |
         cd Day2
         echo "Building puzzel 1"
         g++ Puzzel1.cpp -o Puzzel1.exe
-        ./Puzzel1.exe
-        echo "time c++ puzzel"
-        time ./Puzzel1.exe
-        echo "time python puzzel"
-        time python3 Puzzel1.py
-
-    - name: Day 2 puzzel 2
+        echo "Building puzzel 2"
+        g++ Puzzel2.cpp -o Puzzel2.exe
+        
+    - name: Day 2 puzzel 1 c++
       run: |
         cd Day2
-        echo "Building puzzel 2"
-        g++ Puzzel2.cpp -o Puzzel2.exe
-        ./Puzzel2.exe
+        echo "time c++ puzzel"
+        time ./Puzzel1.exe
+
+    - name: Day 2 puzzel 1 python
+      run: |
+        cd Day2
+        echo "time python puzzel"
+        time python3 Puzzel1.py
+      
+    - name: Day 2 puzzel 2 c++
+      run: |
+        cd Day2
         echo "time c++ puzzel"
         time ./Puzzel2.exe
+
+    - name: Day 2 puzzel 2 python
+      run: |
+        cd Day2
         echo "time python puzzel"
         time python3 Puzzel2.py
 
-    - name: Day 3 Puzzel 1
+    - name: Day 3 setup
       run: |
         cd Day3
         echo "Building puzzel 1"
         g++ Puzzel1.cpp -o Puzzel1.exe
-        ./Puzzel1.exe
-        echo "time c++ puzzel"
-        time ./Puzzel1.exe
-        echo "time python puzzel"
-        time python3 Puzzel1.py
-
-    - name: Day 3 puzzel 2
-      run: |
-        cd Day3
         echo "Building puzzel 2"
         g++ Puzzel2.cpp -o Puzzel2.exe
-        ./Puzzel2.exe
+        
+    - name: Day 3 puzzel 1 c++
+      run: |
+        cd Day3
+        echo "time c++ puzzel"
+        time ./Puzzel1.exe
+
+    - name: Day 3 puzzel 1 python
+      run: |
+        cd Day3
+        echo "time python puzzel"
+        time python3 Puzzel1.py
+      
+    - name: Day 3 puzzel 2 c++
+      run: |
+        cd Day3
         echo "time c++ puzzel"
         time ./Puzzel2.exe
+
+    - name: Day 3 puzzel 2 python
+      run: |
+        cd Day3
         echo "time python puzzel"
         time python3 Puzzel2.py
 
-    - name: Day 4 Puzzel 1
+    - name: Day 4 setup
       run: |
         cd Day4
         echo "Building puzzel 1"
         g++ Puzzel1.cpp -o Puzzel1.exe
-        ./Puzzel1.exe
-        echo "time c++ puzzel"
-        time ./Puzzel1.exe
-        echo "time python puzzel"
-        time python3 Puzzel1.py
-
-    - name: Day 4 puzzel 2
-      run: |
-        cd Day4
         echo "Building puzzel 2"
         g++ Puzzel2.cpp -o Puzzel2.exe
-        ./Puzzel2.exe
+        
+    - name: Day 4 puzzel 1 c++
+      run: |
+        cd Day4
+        echo "time c++ puzzel"
+        time ./Puzzel1.exe
+
+    - name: Day 4 puzzel 1 python
+      run: |
+        cd Day4
+        echo "time python puzzel"
+        time python3 Puzzel1.py
+      
+    - name: Day 4 puzzel 2 c++
+      run: |
+        cd Day4
         echo "time c++ puzzel"
         time ./Puzzel2.exe
+
+    - name: Day 4 puzzel 2 python
+      run: |
+        cd Day4
         echo "time python puzzel"
         time python3 Puzzel2.py
