@@ -141,3 +141,35 @@ jobs:
         cd Day4
         echo "time python puzzel"
         time python3 Puzzel2.py
+
+    - name: Day 5 setup
+      run: |
+        cd Day5
+        echo "Building puzzel 1"
+        g++ Puzzel1.cpp -o Puzzel1.exe
+        echo "Building puzzel 2"
+        g++ Puzzel2.cpp -o Puzzel2.exe
+        
+    - name: Day 5 puzzel 1 c++
+      run: |
+        cd Day5
+        echo "time c++ puzzel"
+        time ./Puzzel1.exe
+
+    - name: Day 5 puzzel 1 python
+      run: |
+        cd Day5
+        echo "time python puzzel"
+        time python3 Puzzel1.py
+
+    - name: Day 5 puzzel 2 c++
+      run: |
+        cd Day5
+        echo "time c++ puzzel"
+        time ./Puzzel2.exe
+    
+    - name: Day 5 puzzel 2 python
+      run: |
+        cd Day5
+        echo "time python puzzel"
+        time python3 Puzzel2.py
