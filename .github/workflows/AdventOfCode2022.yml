@@ -7,204 +7,224 @@ on:
   workflow_dispatch:
 
 jobs:
-  AdventOfCodeYear2022:
-    name: "Advent of code 2022"
+  Day1:
+    name: "Advent of code 2022 Day 1"
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./2022
+        working-directory: ./2022/Day1
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3.1.0
 
-    - name: Day 1 setup
+    - name: Setup
       run: |
-        cd Day1
         echo "Building puzzel 1"
         g++ Puzzel1.cpp -o Puzzel1.exe
         echo "Building puzzel 2"
         g++ Puzzel2.cpp -o Puzzel2.exe
         
-    - name: Day 1 puzzel 1 c++
+    - name: Puzzel 1 c++
       run: |
-        cd Day1
         echo "time c++ puzzel"
         time ./Puzzel1.exe
 
-    - name: Day 1 puzzel 1 python
+    - name: Puzzel 1 python
       run: |
-        cd Day1
         echo "time python puzzel"
         time python3 Puzzel1.py
       
-    - name: Day 1 puzzel 2 c++
+    - name: Puzzel 2 c++
       run: |
-        cd Day1
         echo "time c++ puzzel"
         time ./Puzzel2.exe
-
-    - name: Day 1 puzzel 2 python
+  
+    - name: Puzzel 2 python
       run: |
-        cd Day1
         echo "time python puzzel"
         time python3 Puzzel2.py
 
-    - name: Day 2 setup
+  Day2:
+    name: "Advent of code 2022 Day 2"
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./2022/Day2
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3.1.0
+
+    - name: Setup
       run: |
-        cd Day2
         echo "Building puzzel 1"
         g++ Puzzel1.cpp -o Puzzel1.exe
         echo "Building puzzel 2"
         g++ Puzzel2.cpp -o Puzzel2.exe
         
-    - name: Day 2 puzzel 1 c++
+    - name: Puzzel 1 c++
       run: |
-        cd Day2
         echo "time c++ puzzel"
         time ./Puzzel1.exe
 
-    - name: Day 2 puzzel 1 python
+    - name: Puzzel 1 python
       run: |
-        cd Day2
         echo "time python puzzel"
         time python3 Puzzel1.py
       
-    - name: Day 2 puzzel 2 c++
+    - name: Puzzel 2 c++
       run: |
-        cd Day2
         echo "time c++ puzzel"
         time ./Puzzel2.exe
-
-    - name: Day 2 puzzel 2 python
+  
+    - name: Puzzel 2 python
       run: |
-        cd Day2
         echo "time python puzzel"
         time python3 Puzzel2.py
 
-    - name: Day 3 setup
+  Day3:
+    name: "Advent of code 2022 Day 3"
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./2022/Day3
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3.1.0
+
+    - name: Setup
       run: |
-        cd Day3
         echo "Building puzzel 1"
         g++ Puzzel1.cpp -o Puzzel1.exe
         echo "Building puzzel 2"
         g++ Puzzel2.cpp -o Puzzel2.exe
         
-    - name: Day 3 puzzel 1 c++
+    - name: Puzzel 1 c++
       run: |
-        cd Day3
         echo "time c++ puzzel"
         time ./Puzzel1.exe
 
-    - name: Day 3 puzzel 1 python
+    - name: Puzzel 1 python
       run: |
-        cd Day3
         echo "time python puzzel"
         time python3 Puzzel1.py
       
-    - name: Day 3 puzzel 2 c++
+    - name: Puzzel 2 c++
       run: |
-        cd Day3
         echo "time c++ puzzel"
         time ./Puzzel2.exe
-
-    - name: Day 3 puzzel 2 python
+  
+    - name: Puzzel 2 python
       run: |
-        cd Day3
         echo "time python puzzel"
         time python3 Puzzel2.py
 
-    - name: Day 4 setup
+  Day4:
+    name: "Advent of code 2022 Day 4"
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./2022/Day4
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3.1.0
+
+    - name: Setup
       run: |
-        cd Day4
         echo "Building puzzel 1"
         g++ Puzzel1.cpp -o Puzzel1.exe
         echo "Building puzzel 2"
         g++ Puzzel2.cpp -o Puzzel2.exe
         
-    - name: Day 4 puzzel 1 c++
+    - name: Puzzel 1 c++
       run: |
-        cd Day4
         echo "time c++ puzzel"
         time ./Puzzel1.exe
 
-    - name: Day 4 puzzel 1 python
+    - name: Puzzel 1 python
       run: |
-        cd Day4
         echo "time python puzzel"
         time python3 Puzzel1.py
       
-    - name: Day 4 puzzel 2 c++
+    - name: Puzzel 2 c++
       run: |
-        cd Day4
         echo "time c++ puzzel"
         time ./Puzzel2.exe
-
-    - name: Day 4 puzzel 2 python
+  
+    - name: Puzzel 2 python
       run: |
-        cd Day4
         echo "time python puzzel"
         time python3 Puzzel2.py
 
-    - name: Day 5 setup
+  Day5:
+    name: "Advent of code 2022 Day 5"
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./2022/Day5
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3.1.0
+
+    - name: Setup
       run: |
-        cd Day5
         echo "Building puzzel 1"
         g++ Puzzel1.cpp -o Puzzel1.exe
         echo "Building puzzel 2"
         g++ Puzzel2.cpp -o Puzzel2.exe
         
-    - name: Day 5 puzzel 1 c++
+    - name: Puzzel 1 c++
       run: |
-        cd Day5
         echo "time c++ puzzel"
         time ./Puzzel1.exe
 
-    - name: Day 5 puzzel 1 python
+    - name: Puzzel 1 python
       run: |
-        cd Day5
         echo "time python puzzel"
         time python3 Puzzel1.py
-
-    - name: Day 5 puzzel 2 c++
+      
+    - name: Puzzel 2 c++
       run: |
-        cd Day5
         echo "time c++ puzzel"
         time ./Puzzel2.exe
-    
-    - name: Day 5 puzzel 2 python
+  
+    - name: Puzzel 2 python
       run: |
-        cd Day5
         echo "time python puzzel"
         time python3 Puzzel2.py
+  
+  Day6:
+    name: "Advent of code 2022 Day 6"
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./2022/Day6
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3.1.0
 
-    - name: Day 6 setup
+    - name: Setup
       run: |
-        cd Day6
         echo "Building puzzel 1"
         g++ Puzzel1.cpp -o Puzzel1.exe
         echo "Building puzzel 2"
         g++ Puzzel2.cpp -o Puzzel2.exe
         
-    - name: Day 6 puzzel 1 c++
+    - name: Puzzel 1 c++
       run: |
-        cd Day6
         echo "time c++ puzzel"
         time ./Puzzel1.exe
 
-    - name: Day 6 puzzel 1 python
+    - name: Puzzel 1 python
       run: |
-        cd Day6
         echo "time python puzzel"
         time python3 Puzzel1.py
-
-    - name: Day 6 puzzel 2 c++
+      
+    - name: Puzzel 2 c++
       run: |
-        cd Day6
         echo "time c++ puzzel"
         time ./Puzzel2.exe
-    
-    - name: Day 6 puzzel 2 python
+  
+    - name: Puzzel 2 python
       run: |
-        cd Day6
         echo "time python puzzel"
         time python3 Puzzel2.py
