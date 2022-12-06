@@ -2,14 +2,17 @@ on:
   push:
     branches:
     - main
+    paths:
+    - 2022
   workflow_dispatch:
-  
-  
+
 jobs:
-  my_job:
-    name: deploy to staging
+  AdventOfCodeYear2022:
+    name: "Advent of code 2022"
     runs-on: ubuntu-latest
-  
+    defaults:
+      run:
+        working-directory: ./2022
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3.1.0
