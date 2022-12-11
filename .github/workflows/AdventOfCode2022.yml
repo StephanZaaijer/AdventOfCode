@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./2022/Day1
+        working-directory: ./2022/Day01
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3.1.0
@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./2022/Day2
+        working-directory: ./2022/Day02
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3.1.0
@@ -84,7 +84,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./2022/Day3
+        working-directory: ./2022/Day03
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3.1.0
@@ -121,7 +121,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./2022/Day4
+        working-directory: ./2022/Day04
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3.1.0
@@ -158,7 +158,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./2022/Day5
+        working-directory: ./2022/Day05
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3.1.0
@@ -195,7 +195,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./2022/Day6
+        working-directory: ./2022/Day06
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3.1.0
@@ -232,7 +232,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./2022/Day7
+        working-directory: ./2022/Day07
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3.1.0
@@ -259,7 +259,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./2022/Day8
+        working-directory: ./2022/Day08
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3.1.0
