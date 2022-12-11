@@ -254,6 +254,31 @@ jobs:
         echo "time c++ puzzel"
         time ./Puzzel2.exe
 
+  Day8:
+    name: "Advent of code 2022 Day 8"
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./2022/Day8
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3.1.0
+
+    - name: Setup
+      run: |
+        echo "Building puzzel 1"
+        g++ Puzzel1.cpp -o Puzzel1.exe
+
+    - name: Puzzel 1 c++
+      run: |
+        echo "time c++ puzzel"
+        time ./Puzzel1.exe
+
+    - name: Puzzel 1 python
+      run: |
+        echo "time python puzzel"
+        time python3 Puzzel1.py
+
   Day11:
     name: "Advent of code 2022 Day 11"
     runs-on: ubuntu-latest
